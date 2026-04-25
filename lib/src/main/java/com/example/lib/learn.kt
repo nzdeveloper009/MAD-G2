@@ -85,8 +85,25 @@ fun loops(){
     var num=2
     var i=1
     while (i<=10){
-        println("$num x $i = ${i*num}")
+        println("$num x $i = ${i*num}")// string templating
 i++
     }
 
+}
+fun for_loop(){
+    for (i in 1..10){
+        if (i%2==0)
+            println(i)
+    }
+    //until
+    for (i in 1 until 10 step 2)
+        println("Sanila")
+    for (i in 10 downTo 1)
+        println(i)
+    // sum of numbers
+var sum=0
+    for (i in 1..10){
+         sum=sum+i
+    }
+    println(sum)
 }
