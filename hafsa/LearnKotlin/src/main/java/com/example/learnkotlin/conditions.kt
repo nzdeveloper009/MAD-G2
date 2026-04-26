@@ -30,4 +30,31 @@ fun main() {
     } else {
         println("Number is positive")
     }
+
+    // take input from user and check
+    // if  a person is eligible to vote
+    print("Enter your age: ")
+    val age= readLine()!!.toInt()
+    if(age>=18)
+    {
+        println("Eligible...")
+    }
+    else{
+        println("Not Eligible")
+    }
+
+
+    //print days of week using when
+    print("Enter a day number (1 to 7): ")
+    var day= readLine()!!.toInt()
+    when(day){
+        1 -> println("Monday")
+        2 -> println("Tuesday")
+        3 -> println("Wednesday")
+        4 -> println("Thursday")
+        5 -> println("Friday")
+        6 -> println("Saturday")
+        7 -> println("Sunday")
+        else -> "Invalid Input"
+    }
 }
