@@ -18,4 +18,16 @@ fun main() {
     }
 
 
+    // check value is positive or negative
+
+    print("Enter a number: ")
+    val x = readLine()!!.toInt()
+
+    if (x == 0) {
+        println("Number is ZERO")
+    } else if (x < 0) {
+        println("Number is negative")
+    } else {
+        println("Number is positive")
+    }
 }
