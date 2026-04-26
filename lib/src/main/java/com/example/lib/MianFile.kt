@@ -15,7 +15,7 @@ fun main(){
     // Arrays
     //array()
     // Class And Objects
-    val car1= car("BMW","Petrol",200,600)
+   /* val car1= car("BMW","Petrol",200,600)
     val car2= car("Ferrari","Diesel",250,700)
     car1.driveCar()
     car2.driveCar()
@@ -25,5 +25,6 @@ fun main(){
     println(p1.name)
     //default constructor
     val ob= calculator()
-    println(ob.add(2,7))
+    println(ob.add(2,7))*/
+
 }

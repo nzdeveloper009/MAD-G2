@@ -51,7 +51,7 @@ val name: String="$nampara.clan"// Getters and Setters
     }
 }
 // default constructor
-class calculator{
+private class calculator{
     fun add(a: Int,b: Int):Int{
         return a+b
     }
