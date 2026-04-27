@@ -15,12 +15,29 @@ fun main() {
 
     var result = factorial(4)
     println(result)
+
+    //assign funtion to a variable
+    var fn= ::factorial
+    println(fn(5))
+
+    //funtion overloading
+    var maximum=max(12.5,12.7)
+    println(maximum)
 }
 
 
 
 // MAXIMUM
 fun max ( a: Int, b : Int): Int {
+    if(a>b){
+        return a
+    }else{
+        return b
+    }
+}
+
+
+fun max ( a: Double, b : Double): Double {
     if(a>b){
         return a
     }else{
