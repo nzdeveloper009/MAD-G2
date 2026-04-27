@@ -2,7 +2,7 @@ package com.example.lib
 
 import kotlin.math.PI
 
-fun main() {
+/*fun main() {
     val cir = Circle(3.0)
     println("Area: ${cir.area()}")
     cir.display()
@@ -78,4 +78,4 @@ class test{
     fun  make_test(){
         println(" test is being to start")
     }
-}
+}*/
