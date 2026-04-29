@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "MAD G2"
 include(":app")
- 
+include(":AyeshaLearnKotlin")
