@@ -12,17 +12,17 @@ fun main(){
 // cannot inherit child from multiple classes
 
 open class Parent{
-    val name: String=""
+     val name: String=""
     init{
         println("Parent's constructor called ")
     }
-    fun method(){
+   fun method(){
         println("Parent function called")
     }
 
 }
 class Child:Parent(){
-    val name2: String=""
+     val name2: String=""
     init{
         println("Child's constructor called ")
     }
