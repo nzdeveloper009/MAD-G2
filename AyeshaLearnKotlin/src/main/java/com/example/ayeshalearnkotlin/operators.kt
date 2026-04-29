@@ -26,5 +26,14 @@ fun main()
     //decreamnet operator
     println(d--)   //post: value is used first then decreamented
     println(--d)   //pre: first its decremented then used
+
+    var result= c==13 && d==7  //and opt:if both are true , result is true otherwise false
+    println(result)
+    var total= c==13 || d==5  //or opt: if anyone of them is true , result is true
+    println(total)
+    println(!total)   //not opt : if result is true it changws to false , if false it changes to true
+    // short circuiting: if answer is detectable by just checking the first condition it doesnt check the second condition doesnt magtter what function is performimg t it.
+    var resultt= c==15|| (++d)==c
+    println(d)
 }
 
