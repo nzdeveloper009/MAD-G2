@@ -1,7 +1,31 @@
 package com.example.ilmaslearnkotlin
 
 fun main(){
-dragObjects(arrayOf(Circles(4.0),Triangles(2.0,5.0),Player("smilley")))
+    println("Type checking and Type casting")
+    // type checking is used to verify the object type on runtime  but kotlin is the powerful language that check the type on compile time
+    // **** type-casting
+    // type casting is used to convert the object from one type to another type to use its specific methods or properties
+    val circle=Circles(4.0)
+    val Triangle=Triangles(2.0,5.0)
+    val player=Player("Ali")
+    val arr: Array<Draggable> =arrayOf(circle,player)
+    for(obj in arr) {
+        if (obj is Circles) {
+            println(obj.area())  // type checking
+        }
+        else if(obj is Triangles){
+            println(obj.area())
+        }
+        else{
+            (obj as Player).myName() // type casting
+        }
+
+    }
+    println("----------------------------------------------")
+
+    println("***Interface****")
+
+dragObjects(arrayOf(Circles(3.0),Triangles(7.0,5.0),Player("smilley")))
 }
 fun dragObjects(objects: Array<Draggable>){
     for(obj in objects){
@@ -39,4 +63,5 @@ class Player(val name:String):Draggable{
     override fun drag(){
         println("$name player is dragging")
     }
+    fun myName()=println("My name is $name")
 }
