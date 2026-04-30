@@ -9,7 +9,7 @@ fun mul(g: Int , h: Int): Int{
     val product=g*h
     return product
 }
-fun mul(g:Int , h:Int , i:Int):Int{
+fun mul(g:Int , h:Int , i:Int):Int {
     val product=g*h*i
     return product
 
