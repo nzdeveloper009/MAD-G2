@@ -10,7 +10,7 @@ fun main() {
 
     //lambda expression
     val lam ={x: Int,y: Int-> x+y}
-    // multi line lamda
+    // multi line lambda
     val lam1={
         println("Hello lambda")
         val a: Int=2+3
@@ -22,7 +22,7 @@ fun main() {
 }
 
 
-//a function that store as parameter pass and a fun can return a function
+
 fun sum(a: Double,b: Double): Double{
     return a+b
 }
@@ -34,7 +34,7 @@ fun calculator(a: Double,b: Double,gn:(Double, Double)-> Double){
     val res=gn(a,b)
     println(res)
 }
-//lambadas expression are function without name
-val singlelama={x: Int-> x*x}// single value lambda with variable
-val lamb2:(Int)-> Int={it+it}//single value lambda with it
+//lambadas expression are function without name ----anonymous functions
+val singleLambda={x: Int-> x*x}// single value lambda with variable
+val lamb2:(Int)-> Int={it+it}//single value lambda with it ---- no need to define x
 val sayHi={message: String->println(" the word is $message")}
