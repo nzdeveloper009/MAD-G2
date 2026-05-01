@@ -1,6 +1,5 @@
 package com.example.ilmaslearnkotlin
 
-import kotlin.collections.iterator
 // ***** why we need of list
 //We use List instead of Array because it is dynamic, more flexible, and provides many built-in functions for easier data handling.
 //Mutable List can be Change
