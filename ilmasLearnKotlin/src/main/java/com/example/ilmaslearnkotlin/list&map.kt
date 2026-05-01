@@ -40,13 +40,16 @@ fun main(){
     println(std.get(1))// to get elements
     for ((key:Int,value:String) in std){
         println("$key $value")
-        // modify---set
-        std[3]="Bob"
 
-        //immutable
-        val m=mapOf<Int, String>(1 to "Apple",2 to "Banana")// USR TO operator for adding value
-        println(m)
+
     }
+    // modify---set
+    std[3]="Bob"
+
+    //immutable
+    val m=mapOf<Int, String>(1 to "Apple",2 to "Banana")// USR TO operator for adding value
+    println(m)
+
 
 
 
