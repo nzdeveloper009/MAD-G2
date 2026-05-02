@@ -13,9 +13,29 @@ object DatabaseManager {
     }
 }
 
+open class Database {
+    open fun connect() {
+        println("Default database connection")
+    }
+}
+
 fun main() {
     DatabaseManager.connect()
     DatabaseManager.dbName = "EmployeeDB"
     DatabaseManager.connect()
     DatabaseManager.disconnect()
+
+    val tempDB = object : Database() {
+
+        override fun connect() {
+            println("Temporary connection to TestDB only")
+        }
+
+        fun runQuery() {
+            println("Running test query...")
+        }
+    }
+
+    tempDB.connect()
+    tempDB.runQuery()
 }
