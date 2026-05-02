@@ -1,6 +1,20 @@
 package com.example.learnkotlin
 
 open class Employee {
+
+    // public
+    var name: String = "Unknown"
+
+    // private srf isi class
+    private var salary: Int = 50000
+
+    // protected subclass
+    protected var experience: Int = 2
+
+    // internal same module/project
+    internal var department: String = "IT"
+
+
     fun work() {
         println("Employee working")
     }
@@ -43,6 +57,17 @@ class Bike : Vehicle() {
 
 fun main() {
     val emp: Employee = Developer()
+
+    val dev = Developer()
+
+    dev.name = "Ali"
+    dev.work()
+    dev.code()
+    // not accessible
+    // println(dev.experience)
+
+    // not accessible (private)
+    // dev.calculateSalary()
 
     if (emp is Developer) {
         emp.code()   // smart casting
