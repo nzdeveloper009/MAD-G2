@@ -7,7 +7,7 @@ fun main(){
 }
 class X {
     var x = 1
-//for nested class(Y) keyword"inner" is used , we cannot access properties of outer(X) class if we dont use this keyword
+//for nested class(Y) keyword"inner" is used , we cannot access properties of outer(X ) class if we dont use this keyword
     inner class Y{
         fun test1() {
             println("i'm in nested class $x")
