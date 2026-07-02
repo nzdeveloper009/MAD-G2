@@ -2,9 +2,9 @@ package com.learning.learnkotlin
 
 //
 fun main(){
-    val circle = Circle(4.0)
-    println(circle.area())
-    circle.display()
+    //val circle = Circle(4.0)
+    //println(circle.area())
+    //circle.display()
 }
 
 abstract class A{
@@ -12,15 +12,15 @@ abstract class A{
         println("i am method")
     }
 }
-abstract class Shape {
+//abstract class Shape {
     var name:String =""
-    abstract fun area(): Double
-    abstract  fun display()
+  //  abstract fun area(): Double
+    //abstract  fun display()
 
-}
-class Circle(val radius:Double):Shape(){
-    override fun area():Double = Math.PI*radius*radius
-    override fun display() {
-        println("Circle is getting display")
-    }
-}
+//}
+//class Circle(val radius:Double):Shape(){
+    //override fun area():Double = Math.PI*radius*radius
+  //  override fun display() {
+      //  println("Circle is getting display")
+    //}
+//}
