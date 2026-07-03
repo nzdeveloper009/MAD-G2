@@ -5,7 +5,7 @@ fun main (){
     //overloading and overriding is also a part of polymorphism , we have discussed them before .
 val shapes: Array<Shape> = arrayOf(Circle(3.0),Square(4.0),Triangle(4.0,7.0))
     claculatesAreas(shapes)
-    // an array of Shape data type(class)is holding the referances od child classes and it called the methods of circle , square , triagnle class
+    // an array of Shape data type(class)is holding the referances of child classes and it called the methods of circle , square , triagnle class
 }
 fun claculatesAreas(shapes: Array<Shape>){
     for(shape: Shape in shapes){
