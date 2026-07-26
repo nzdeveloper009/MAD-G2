@@ -1,4 +1,4 @@
-package com.example.solidprinciples
+
 //Problem Statement
 //Design and develop a console-based Food Delivery System in Kotlin that allows
 // users to browse restaurants, select food items, add them to a cart, and place orders.
